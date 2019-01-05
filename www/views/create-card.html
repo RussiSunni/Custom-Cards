@@ -88,7 +88,7 @@
             </div>
             <div class="row mt-4">
                 <div class="col">
-                    <form action = "../../api/childResource.php" method="POST">
+                    <form action = "../../api/childResource.php" id = "childform" method="POST">
                         <div class="form-group row">
                             <label for="name" class="col-sm-2 col-form-label">Your name</label>
                             <div class="col-sm-10">
@@ -111,14 +111,15 @@
                         <div class="form-group row">
                             <label for="childAge" class="col-sm-2 col-form-label">The child's age</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="childAge" name="childage" placeholder="The age of the child">
+                                <input type="text" class="form-control" id="childage" name="childage" placeholder="The age of the child">
                             </div>
                         </div>
+                        <div id="warning"></div>
 
                         <div class="form-group row">
                             <label for="childStarsign" class="col-sm-2 col-form-label">The child's star sign</label>
                             <div class="col-sm-10">
-                                <select class="custom-select my-1 mr-sm-2" id="childStarsign" name="childzodiac">
+                                <select class="custom-select my-1 mr-sm-2" id="childzodiac" name="childzodiac">
                                     <option selected>Choose...</option>
                                     <option value="1">Aries</option>
                                     <option value="2">Taurus</option>
@@ -232,6 +233,8 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.min.js"></script>
+    <script src="../logic/custom-cards.js"></script>
 </body>
 
 </html>

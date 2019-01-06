@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/custom-cards.css">
+    <link rel="stylesheet" href="./css/custom-cards.css">
 
     <title>Custom Cards</title>
 </head>
@@ -36,51 +36,19 @@
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./views/register.html">signup</a>
+                    </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="create-card.html">create a card</a>
+                        <a class="nav-link" href="./views/login.html">login</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./views/create-card.php">create a card</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="card-ideas.html">some card ideas</a>
+                        <a class="nav-link" href="./views/card-ideas.php">some card ideas</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </section>
-
-    <section id="">
-        <div class="container">
-            <div class="row mt-5">
-                <div class="col">
-                    <h2 class="text-center">Some Card Ideas</h2>
-                </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col">
-                    
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-
-    <section class="footer">
-        <div class="container">
-            <div class="row">
-                <p class="copyright w-100 text-center">© 2018 ecomap</p>
-            </div>
-        </div>
-    </section>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-        crossorigin="anonymous"></script>
-</body>
-
-</html>

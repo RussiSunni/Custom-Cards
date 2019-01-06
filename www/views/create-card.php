@@ -1,51 +1,7 @@
-<!doctype html>
-<html lang="en">
+<?php
+    require "header.php";
+?>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/custom-cards.css">
-
-    <title>Custom Cards</title>
-</head>
-
-<body>
-    <section id="navigation">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Custom Cards</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#introduction">What are Custom Cards?<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#examples">Some Examples</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#how-it-works">How it Works</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact Us</a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="create-card.html">create a card</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="card-ideas.html">some card ideas</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </section>
 
 
     <section id="">
@@ -90,35 +46,35 @@
                 <div class="col">
                     <form action = "../../api/childResource.php" id = "childform" method="POST">
                         <div class="form-group row">
-                            <label for="name" class="col-sm-2 col-form-label">Your name</label>
-                            <div class="col-sm-10">
+                            <label for="name" class="col-sm-3 col-form-label">Your name</label>
+                            <div class="col-sm-9">
                                 <input type="text" class="form-control" id="name" name="name" placeholder="Your name">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="email" class="col-sm-2 col-form-label">Your email</label>
-                            <div class="col-sm-10">
+                            <label for="email" class="col-sm-3 col-form-label">Your email</label>
+                            <div class="col-sm-9">
                                 <input type="email" class="form-control" id="email" name="email" placeholder="Your email address">
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label for="childname" class="col-sm-2 col-form-label">The child's name</label>
-                            <div class="col-sm-10">
+                            <label for="childname" class="col-sm-3 col-form-label">The child's name</label>
+                            <div class="col-sm-9">
                                 <input type="text" class="form-control" id="childname" name="childname" placeholder="The name of the child">
                             </div>
                         </div>
 
                         <div class="form-group row">
-                            <label for="childAge" class="col-sm-2 col-form-label">The child's age</label>
-                            <div class="col-sm-10">
+                            <label for="childAge" class="col-sm-3 col-form-label">The child's age</label>
+                            <div class="col-sm-9">
                                 <input type="text" class="form-control" id="childage" name="childage" placeholder="The age of the child">
                             </div>
                         </div>
                         <div id="warning"></div>
 
                         <div class="form-group row">
-                            <label for="childStarsign" class="col-sm-2 col-form-label">The child's star sign</label>
-                            <div class="col-sm-10">
+                            <label for="childStarsign" class="col-sm-3 col-form-label">The child's star sign</label>
+                            <div class="col-sm-9">
                                 <select class="custom-select my-1 mr-sm-2" id="childzodiac" name="childzodiac">
                                     <option selected>Choose...</option>
                                     <option value="1">Aries</option>
@@ -138,52 +94,52 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="childPet" class="col-sm-2 col-form-label">The child's favourite pet</label>
-                            <div class="col-sm-10">
+                            <label for="childPet" class="col-sm-3 col-form-label">The child's favourite pet</label>
+                            <div class="col-sm-9">
                                 <input type="text" class="form-control" id="childPet" name="childpet" placeholder="The child's favourite pet">
                             </div>
                         </div>
 
                         <div class="form-group row">
-                            <label for="childMovie" class="col-sm-2 col-form-label">The child's
+                            <label for="childMovie" class="col-sm-3 col-form-label">The child's
                                 favourite movies</label>
-                            <div class="col-sm-10">
+                            <div class="col-sm-9">
                                 <input type="text" class="form-control" id="childMovie" name="childmovie" placeholder="The child's favourite movies">
                             </div>
                         </div>
 
                         <div class="form-group row">
-                            <label for="childCartoon" class="col-sm-2 col-form-label">The child's
+                            <label for="childCartoon" class="col-sm-3 col-form-label">The child's
                                 favourite cartoons</label>
-                            <div class="col-sm-10">
+                            <div class="col-sm-9">
                                 <input type="text" class="form-control" id="childCartoon" name="childcartoon" placeholder="The child's favourite cartoons">
                             </div>
                         </div>
 
                         <div class="form-group row">
-                            <label for="childPlace" class="col-sm-2 col-form-label">Their favourite places</label>
-                            <div class="col-sm-10">
+                            <label for="childPlace" class="col-sm-3 col-form-label">Their favourite places</label>
+                            <div class="col-sm-9">
                                 <input type="text" class="form-control" id="childPlace" name="childplace" placeholder="The child's favourite place">
                             </div>
                         </div>
 
                         <div class="form-group row">
-                            <label for="childFood" class="col-sm-2 col-form-label">Their favourite food</label>
-                            <div class="col-sm-10">
+                            <label for="childFood" class="col-sm-3 col-form-label">Their favourite food</label>
+                            <div class="col-sm-9">
                                 <input type="text" class="form-control" id="childFood" name="childfood" placeholder="The child's favourite food">
                             </div>
                         </div>
 
                         <div class="form-group row">
-                            <label for="childHobby" class="col-sm-2 col-form-label">Their favourite hobby</label>
-                            <div class="col-sm-10">
+                            <label for="childHobby" class="col-sm-3 col-form-label">Their favourite hobby</label>
+                            <div class="col-sm-9">
                                 <input type="text" class="form-control" id="childHobby" name="childhobby" placeholder="The child's favourite hobby">
                             </div>
                         </div>
 
                         <div class="form-group row">
-                            <label for="childOther" class="col-sm-2 col-form-label">Any other favourite things</label>
-                            <div class="col-sm-10">
+                            <label for="childOther" class="col-sm-3 col-form-label">Any other notes</label>
+                            <div class="col-sm-9">
                                 <div class="form-group">
                                     <textarea class="form-control" id="childOther" name="childother" placeholder="Anything else" rows="3"></textarea>
                                   </div>
@@ -192,8 +148,8 @@
 
 
                         <div class="form-group row">
-                            <label for="inputChildPhoto" class="col-sm-2 col-form-label">The child's photo</label>
-                            <div class="col-sm-10">
+                            <label for="inputChildPhoto" class="col-sm-3 col-form-label">The child's photo</label>
+                            <div class="col-sm-9">
                                 <div class="custom-file">
                                     <input type="file" class="custom-file-input" id="inputChildPhoto" name="childphoto">
                                     <label class="custom-file-label" for="inputChildPhoto">Choose image</label>
@@ -218,23 +174,6 @@
     </section>
 
 
-
-    <section class="footer">
-        <div class="container">
-            <div class="row">
-                <p class="copyright w-100 text-center">© 2018 ecomap</p>
-            </div>
-        </div>
-    </section>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.min.js"></script>
-    <script src="../logic/custom-cards.js"></script>
-</body>
-
-</html>
+<?php
+    require "footer.php";
+?>
